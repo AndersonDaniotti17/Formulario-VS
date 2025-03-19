@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- Referência para o CSS externo -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Formulário de Cadastro</h2>
+        <form id="formulario" action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" class="form-control" id="idade" name="idade" placeholder="Digite sua idade" required>
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" id="data-nascimento" name="data-nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Crie uma senha" required>
+            </div>
+            <div class="form-group">
+                <label>Tecnologias que você conhece</label><br>
+                <input type="checkbox" id="html" name="tecnologia[]" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="tecnologia[]" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="javascript" name="tecnologia[]" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                <input type="checkbox" id="php" name="tecnologia[]" value="PHP">
+                <label for="php">PHP</label><br>
+                <input type="checkbox" id="python" name="tecnologia[]" value="Python">
+                <label for="python">Python</label><br>
+            </div>
+            <div class="form-group">
+                <label>Nível de experiência em HTML</label><br>
+                <input type="radio" id="iniciante" name="nivel" value="Iniciante">
+                <label for="iniciante">Iniciante</label><br>
+                <input type="radio" id="intermediario" name="nivel" value="Intermediário">
+                <label for="intermediario">Intermediário</label><br>
+                <input type="radio" id="avancado" name="nivel" value="Avançado">
+                <label for="avancado">Avançado</label>
+            </div>
+            <div class="form-group">
+                <label for="sistema-operacional">Sistema operacional principal</label>
+                <select class="form-control" id="sistema-operacional" name="sistema-operacional" required>
+                    <option value="Windows">Windows</option>
+                    <option value="Linux">Linux</option>
+                    <option value="macOS">macOS</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+        <div id="mensagem-enviado" class="alert alert-success mt-4" style="display: none;">
+            Formulário enviado com sucesso!
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script> <!-- Referência para o JS externo -->
+</body>
+
+</html>
